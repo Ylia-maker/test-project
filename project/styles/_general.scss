@@ -1,0 +1,57 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Убираем внутренние отступы */
+/* Удаляем стандартную стилизацию для всех ul и il*/
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+/* Элемент a*/
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+span {
+  display: inline-flex;
+}
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li {
+  margin: 0;
+}
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    font: $font-monts__regular;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background: $bg-main;
+    padding: 30px 0;
+}
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*Контейнер*/
+.container {
+  max-width: 1024px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
